@@ -80,48 +80,48 @@ const people = [
 
 
 // My Solution
-const group1 = (items, key) => {
-  // your code here 
-  let occObj = people.reduce(
-    (a, b) => {
-      (a[b.occupation] = [...a[b.occupation] || [], b])
-      return a;
-    }, {}
-  );
+// const group1 = (items, key) => {
+//   // your code here 
+//   let occObj = people.reduce(
+//     (a, b) => {
+//       (a[b.occupation] = [...a[b.occupation] || [], b])
+//       return a;
+//     }, {}
+//   );
 
-  let ageObj = people.reduce(
-    (a, b) => {
-      (a[b.age] = [...a[b.age] || [], b]);
-      return a;
-    }, {}
-  );  
+//   let ageObj = people.reduce(
+//     (a, b) => {
+//       (a[b.age] = [...a[b.age] || [], b]);
+//       return a;
+//     }, {}
+//   );  
   // returns an obj with two nested objects, age, and occupation wich have nested arrays for each grouping
-  return {age: ageObj, occupation: occObj};
+  // return {age: ageObj, occupation: occObj};
 
-    object{
-      objAge{
-        array 18: [
-          obj 0 {key: val, key: val},
-          obj 1 {key: val, key: val},
-        ],
-        array 21: [
-          obj 0 {key: val, key: val},
-          obj 1 {key: val, key: val},
-        ]
-      },
-      objOccu{
-        array office: [
-          obj 0 {key: val, key: val},
-          obj 1 {key: val, key: val},
-        ],
-        array service: [
-          obj 0 {key: val, key: val},
-          obj 1 {key: val, key: val},
-        ],
-      }
-    }
-}
-console.log('Attempt 1', group1());
+    // object{
+    //   objAge{
+    //     array 18: [
+    //       obj 0 {key: val, key: val},
+    //       obj 1 {key: val, key: val},
+    //     ],
+    //     array 21: [
+    //       obj 0 {key: val, key: val},
+    //       obj 1 {key: val, key: val},
+    //     ]
+    //   },
+    //   objOccu{
+    //     array office: [
+    //       obj 0 {key: val, key: val},
+    //       obj 1 {key: val, key: val},
+    //     ],
+    //     array service: [
+    //       obj 0 {key: val, key: val},
+    //       obj 1 {key: val, key: val},
+    //     ],
+    //   }
+    // }
+// }
+// console.log('Attempt 1', group1());
 
 // // My Solution 2
 // const group2 = (items, key) => {
