@@ -5,8 +5,10 @@
     <link rel="stylesheet" href="node_modules/mocha/mocha.css">
   </head>
   <body>
+    <header>
     <h1>Please open up the console</h1>
     <p><a href="https://github.com/phat-marc/homework">link</a> to actual repo</p>
+    </header>
     <div id="mocha"></div>
     <script src="node_modules/mocha/mocha.js"></script>
     <script src="node_modules/chai/chai.js"></script>
@@ -16,10 +18,13 @@
     <script src="my-work.js"></script>
 
     <!-- Test files go here -->
-    <script src="test.js"></script>
+    <script src="test/test.js"></script>
 
-    <script>
-      mocha.run();
-    </script>
+    <script>mocha.run();</script>
   </body>
 </html>
+
+<!-- 
+  Setup mocha for testing in the browser:
+  https://www.sitepoint.com/unit-test-javascript-mocha-chai/ 
+-->
